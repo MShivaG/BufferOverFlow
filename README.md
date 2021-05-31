@@ -171,7 +171,10 @@ int main(int argc, char **argv)
 ```
 
 Here the size of the buffer is 140 bytes. *using gdb find the overflow point*
+
 ![](zNMC7in.png)
+
+
 As the buffer grows up it overwrites the return address.
 **We are going to point the return address back to the buffer**
 Why?
